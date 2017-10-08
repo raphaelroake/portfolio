@@ -1,0 +1,468 @@
+
+    a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote,
+body, canvas, caption, center, cite, code, dd, del, details, dfn, dialog,
+div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form,
+header, hgroup, hr, html, i, iframe, img, ins, kbd, label, legend, li, mark,
+menu, meter, nav, object, ol, output, p, pre, progress, q, rp, rt, ruby, s,
+samp, section, small, span, strike, strong, sub, summary, sup, table, tbody,
+td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: gt_sectra_display;
+    src: url(assets/fonts/GT-Sectra-Display-Light.woff);
+}
+
+body, html{
+    background-color: #000;
+}
+
+
+
+article, aside, details, figcaption, figure, footer, header, hgroup,
+menu, nav, section {
+    display: block
+}
+
+
+b, strong {
+    font-weight: 700
+}
+
+ol, ul {
+    list-style: none
+}
+
+li {
+    display: list-item;
+    list-style: none;
+}
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+caption, td, th {
+    font-weight: 400;
+    vertical-align: top;
+    text-align: left
+}
+
+q {
+    quotes: none
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+q:after, q:before {
+    content: '';
+    content: none
+}
+
+small, sub, sup {
+    font-size: 20%;
+}
+
+sub, sup {
+    line-height: 1;
+    left: -18px;
+    position: relative;
+    vertical-align: relative;
+}
+
+sub {
+    bottom: -.35em
+}
+
+sup {
+    top: -.80em;
+    font-size: 0.25em;
+    font-weight: 400;
+}
+
+svg {
+    overflow: hidden;
+}
+
+input, button, submit { 
+    border:none; } 
+
+
+h1 {
+    color: white;
+    font-weight: 100;
+    line-height: 1;
+    font-size: 180px;
+    font-family: "gt_sectra_display", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+h2{
+    font-family: "gt_sectra_display", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: white;
+    line-height: 1em;
+    font-size: 30px;
+    font-weight: 100;
+    }
+
+
+
+h3{
+    font-family: "gt_sectra_display", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: white;
+    line-height: 1em;
+    font-size: 75px;
+    font-weight: 100;
+    color: #fff;
+    animation: fade-in 1.5s ease;
+    animation-direction: forwards;
+
+    }
+
+
+h4{
+    font-family: "gt_sectra_display", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: black;
+    line-height: 1em;
+    font-size: 75px;
+    font-weight: 100;
+    }
+
+h5{
+    font-family: "gt_sectra_display", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: #000;
+    line-height: 1em;
+    font-size: 30px;
+    font-weight: 100;
+    }
+
+h6{
+    font-family: "gt_sectra_display", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: white;
+    line-height: 1em;
+    font-size: 30px;
+    font-weight: 100;
+    
+}
+
+p {
+    font-family: "Times New Roman";
+    color: white;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 17px;
+    
+}
+
+
+.container{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    margin-right: auto;
+    margin-left: auto;
+    border: solid white;
+    border-width: 0px 0px 0px 0px;
+    overflow: scroll;
+}
+
+.container::-webkit-scrollbar{
+
+    display: none;
+}
+
+.holding{
+    width: 1000px;
+}
+
+
+.top-bar{
+    height: 30px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-bar{
+    height: 300px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.title{
+    width: 1200px;
+    height: 230px;
+    margin-left: 40px;
+    margin-top: 40px;
+    animation: fade-in 1.5s ease;
+    animation-direction: forwards;
+    
+}
+
+.title-bar{
+    width: 200px;
+    height: 30px;
+    padding-left: 20px;
+    padding-top: 15px;
+    float: left;
+    border: solid white;
+    border-width: 0px 0px 0px 0px;
+    
+}
+
+.title-bar:hover{
+    border: solid white;
+    border-width: 0px 0px 1px 0px;
+}
+
+
+.work{
+    float: left;
+    width: 165px;
+    height: 70px;
+    margin-left: 40px;
+    margin-right: 25px;
+    animation: fade-in 1.5s ease;
+    animation-direction: forwards;
+}
+
+.work:hover{
+    border: solid white;
+    border-width: 0px 0px 3px 0px;
+}
+
+
+.work-bar{
+    float: left;
+    width: 80px;
+    height: 30px;
+    padding-top: 15px;
+    padding-left: 15px;
+    border: solid white;
+    border-width: 0px 0px 0px 0px;
+}
+
+.work-bar:hover{
+    border: solid white;
+    border-width: 0px 0px 1px 0px;
+}
+
+
+
+.contact{
+    float: left;
+    width: 240px;
+    height: 70px;
+    margin-right: 25px;
+    margin-left: 40px;
+    animation: fade-in 1.5s ease;
+    animation-direction: forwards;
+}
+
+.contact-bar{
+    float: left;
+    width: 115px;
+    height: 30px;
+    padding-top: 15px;
+    padding-left: 20px;
+    border: solid white;
+    border-width: 0px 0px 0px 0px;
+}
+
+
+.contact:hover{
+    border: solid white;
+    border-width: 0px 0px 3px 0px;
+}
+
+
+
+.contact-bar:hover{
+    border: solid white;
+    border-width: 0px 0px 1px 0px;
+}
+
+
+.cv{
+    float: left;
+    width: 520px;
+    height: 70px;
+    margin-left: 40px;
+    margin-right: 25px;
+    animation: fade-in 1.5s ease;
+    animation-direction: forwards;
+}
+
+.cv:hover{
+    border: solid white;
+    border-width: 0px 0px 3px 0px;
+}
+
+
+.CV-bar{
+    float: left;
+    width: 225px;
+    height: 30px;
+    padding-top: 15px;
+    padding-left: 20px;
+    border: solid white;
+    border-width: 0px 0px 0px 0px;
+}
+
+.CV-bar:hover{
+    border: solid white;
+    border-width: 0px 0px 1px 0px;
+}
+
+
+.project1{
+    margin-top: 55px;
+    margin-right: 55px;
+    float: left;
+    height: 400px;
+    width: 400px;
+}
+
+.project2{
+    margin-top: 55px;
+    float: left;
+    height: 400px;
+    width: 400px;
+}
+
+.project3{
+    float: left;
+    height: 400px;
+    width: 400px;
+}
+
+.project4{
+    float: left;
+    height: 499.5px;
+    width: 499.5px;
+}
+
+.portrait{
+    width: 626px;
+    border: solid white;
+    border-width: 0px 1px 0px 0px;
+}
+
+
+.image{
+    margin-top: 80px;
+    height: 350px;
+}
+
+.image2{
+    margin-top: 135px;
+    height: 250px;
+    margin-left: 55px;
+}
+
+.top_image{
+     margin-top: 80px;
+    width: 100vw;
+    
+}
+
+.display_image{
+    width: 100vw;
+    animation: fade-in 1.5s ease;
+    animation-direction: forwards;
+
+}
+
+.body_copy{
+    margin-bottom: 100px;
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 350px;
+}
+
+.indent{
+    margin-left: 20px;
+}
+
+.description2{
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.next_project{
+    float: right;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    border: solid white;
+    border-width: 0px 0px 0px 0px;
+    
+}
+
+.next_project:hover{
+    border: solid white;
+    border-width: 0px 0px 1px 0px;
+    padding-bottom: 3px;
+}
+
+.back{
+    float: left;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    border: solid white;
+    border-width: 0px 0px 0px 0px;
+}
+
+.back:hover{
+    border: solid white;
+    border-width: 0px 0px 1px 0px;
+    padding-bottom: 3px;
+}
+
+.CV_container{
+    margin-top: 50px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.CV_body_copy{
+     margin-bottom: 100px;
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 400px;
+    animation: fade-in 1.5s ease;
+    animation-direction: forwards;
+}
+
+@keyframes fade-in{
+    0%{
+        transform: opacity;
+        opacity: 0;
+    }
+    100%{
+        transform: opacity;
+        opacity: 1;
+        
+    }
+}
+
+.coming_soon{
+    float: left;
+    margin-left: 100px;
+}
