@@ -112,9 +112,9 @@ h1 {
 }
 
 h2{
-    font-family: "gt_sectra_display", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: "Times New Roman", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     color: white;
-    line-height: 1em;
+    line-height: 1.2em;
     font-size: 30px;
     font-weight: 100;
     }
@@ -191,10 +191,9 @@ p {
 
 
 .top-bar{
-    height: 30px;
-    width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 100px;
+    width: 100%;
+    margin-left: 0;
 }
 
 .home-bar{
@@ -218,17 +217,16 @@ p {
 .title-bar{
     width: 200px;
     height: 30px;
-    padding-left: 20px;
+    margin-left: 20px;
     padding-top: 15px;
-    float: left;
+/*    float: left;*/
     border: solid white;
     border-width: 0px 0px 0px 0px;
     
 }
 
 .title-bar:hover{
-    border: solid white;
-    border-width: 0px 0px 1px 0px;
+    opacity: 0.5;
 }
 
 
@@ -266,23 +264,21 @@ p {
 
 
 .contact{
-    float: left;
+    float: right;
     width: 240px;
     height: 70px;
-    margin-right: 25px;
-    margin-left: 40px;
+    margin-right: 0px;
+/*    margin-left: 40px;*/
     animation: fade-in 1.5s ease;
     animation-direction: forwards;
 }
 
 .contact-bar{
-    float: left;
-    width: 115px;
+    float: right;
+    left: 0px;
     height: 30px;
-    padding-top: 15px;
-    padding-left: 20px;
-    border: solid white;
-    border-width: 0px 0px 0px 0px;
+    margin-top: -30px;
+    margin-right: 20px;
 }
 
 
@@ -293,10 +289,11 @@ p {
 
 
 
+/*
 .contact-bar:hover{
-    border: solid white;
-    border-width: 0px 0px 1px 0px;
+    opacity: 0.5;
 }
+*/
 
 
 .cv{
@@ -378,16 +375,25 @@ p {
 
 .top_image{
      margin-top: 80px;
-    width: 100vw;
+    width: 100%;
     
 }
 
-.display_image{
-    width: 100vw;
+.display_image_work{
+    float: left;
+    width: 100%;
     animation: fade-in 1.5s ease;
     animation-direction: forwards;
-
 }
+
+.display_image{
+    float: left;
+    width: 50%;
+    animation: fade-in 1.5s ease;
+    animation-direction: forwards;
+    padding-bottom: 50px;
+}
+
 
 .body_copy{
     margin-bottom: 100px;
