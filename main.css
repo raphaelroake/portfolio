@@ -115,22 +115,23 @@ h2{
     font-family: "Times New Roman", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     color: white;
     line-height: 1.2em;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 100;
+    animation: fade-in 1.5s ease;
+    animation-direction: forwards;
     }
 
 
 
 h3{
-    font-family: "gt_sectra_display", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: "Times New Roman", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     color: white;
-    line-height: 1em;
-    font-size: 75px;
+    line-height: 1.3em;
+    font-size: 12px;
     font-weight: 100;
     color: #fff;
     animation: fade-in 1.5s ease;
     animation-direction: forwards;
-
     }
 
 
@@ -215,6 +216,7 @@ p {
 }
 
 .title-bar{
+    position: fixed;
     width: 200px;
     height: 30px;
     margin-left: 20px;
@@ -275,10 +277,8 @@ p {
 
 .contact-bar{
     float: right;
-    left: 0px;
-    height: 30px;
-    margin-top: -30px;
-    margin-right: 20px;
+    margin-top: 20px;
+    margin-right: 30px;
 }
 
 
@@ -286,15 +286,6 @@ p {
     border: solid white;
     border-width: 0px 0px 3px 0px;
 }
-
-
-
-/*
-.contact-bar:hover{
-    opacity: 0.5;
-}
-*/
-
 
 .cv{
     float: left;
@@ -364,7 +355,9 @@ p {
 
 .image{
     margin-top: 80px;
-    height: 350px;
+    width: 100%;
+    animation: fade-in 1.5s ease;
+    animation-direction: forwards;
 }
 
 .image2{
@@ -374,13 +367,18 @@ p {
 }
 
 .top_image{
-     margin-top: 80px;
     width: 100%;
     
 }
 
 .display_image_work{
     float: left;
+    width: 100%;
+    animation: fade-in 1.5s ease;
+    animation-direction: forwards;
+}
+
+.display_image_phone{
     width: 100%;
     animation: fade-in 1.5s ease;
     animation-direction: forwards;
@@ -471,4 +469,14 @@ p {
 .coming_soon{
     float: left;
     margin-left: 100px;
+}
+
+.link{
+    float: left;
+    margin-left: 48%;
+    margin-bottom: 50px;
+}
+
+.link:hover{
+    opacity: 0.5;
 }
