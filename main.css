@@ -386,7 +386,7 @@ p {
 
 .display_image{
     float: left;
-    width: 50%;
+    width: 100%;
     animation: fade-in 1.5s ease;
     animation-direction: forwards;
     padding-bottom: 50px;
