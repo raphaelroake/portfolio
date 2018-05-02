@@ -18,13 +18,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
-@font-face {
-    font-family: gt_sectra_display;
-    src: url(assets/fonts/GT-Sectra-Display-Light.woff);
-}
 
 body, html{
     background-color: #000;
+    -webkit-font-smoothing: antialiased;
 }
 
 
@@ -66,7 +63,11 @@ q {
 
 a {
     text-decoration: none;
-    color: #000;
+    color: white;
+}
+
+a:hover{
+    font-style: italic;
 }
 
 q:after, q:before {
@@ -100,73 +101,76 @@ svg {
 }
 
 input, button, submit { 
-    border:none; } 
+    border:none; }
 
+@font-face {
+    font-family: gt_zirkon_medium;
+    src: url(assets/fonts/GT-Zirkon-Medium-v2.otf);
+}
+
+@font-face {
+    font-family: gt_zirkon_regular;
+    src: url(assets/fonts/GT-Zirkon-Regular-v2.otf);
+}
+
+@font-face {
+    font-family: gt_zirkon_thin;
+    src: url(assets/fonts/GT-Zirkon-Thin-v2.otf);
+}
+
+@font-face {
+    font-family: gt_zirkon_book;
+    src: url(assets/fonts/GT-Zirkon-Book-v2.otf);
+}
 
 h1 {
     color: white;
-    font-weight: 100;
+    font-weight: 500;
     line-height: 1;
-    font-size: 180px;
-    font-family: "gt_sectra_display", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 55px;
+    font-family: "gt_zirkon_medium", "Helvetica", "Arial", sans-serif;
 }
 
-h2{
-    font-family: "Times New Roman", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+h2 {
     color: white;
-    line-height: 1.2em;
-    font-size: 25px;
-    font-weight: 100;
-    animation: fade-in 1.5s ease;
-    animation-direction: forwards;
-    }
-
-
-
-h3{
-    font-family: "Times New Roman", serif;
-    color: white;
-    line-height: 1.3em;
-    font-size: 12px;
-    font-weight: 100;
-    color: #fff;
-    animation: fade-in 1.5s ease;
-    animation-direction: forwards;
-    }
-
-
-h4{
-    font-family: "gt_sectra_display", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    color: black;
-    line-height: 1em;
-    font-size: 75px;
-    font-weight: 100;
-    }
-
-h5{
-    font-family: "gt_sectra_display", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    color: #000;
-    line-height: 1em;
-    font-size: 30px;
-    font-weight: 100;
-    }
-
-h6{
-    font-family: "gt_sectra_display", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    color: white;
-    line-height: 1em;
-    font-size: 30px;
-    font-weight: 100;
-    
+    font-weight: 200;
+    line-height: 1.2;
+    font-size: 15px;
+    font-family: "gt_zirkon_medium", "Helvetica", "Arial", sans-serif;
 }
+
+h3 {
+    color: white;
+    font-weight: 500;
+    line-height: 1;
+    font-size: 55px;
+    font-family: "gt_zirkon_thin", "Helvetica", "Arial", sans-serif;
+}
+
+.project:hover h1{
+    font-style: oblique;
+}
+
+.project:hover img {
+    display:block;
+}
+
+.project img {
+    position: absolute;
+    left: 50%;
+    width:50%;
+    display: none;
+    top:0;
+}
+
 
 p {
-    font-family: "Times New Roman";
+    font-family: "gt_zirkon_book";    
     color: white;
-    font-weight: 100;
+    font-weight: 200;
     font-size: 15px;
     line-height: 17px;
-    
 }
 
 
@@ -181,302 +185,340 @@ p {
     overflow: scroll;
 }
 
-.container::-webkit-scrollbar{
-
-    display: none;
+.c1{
+    float: left;
+    width: 50%;
+    overflow: scroll;
 }
 
-.holding{
-    width: 1000px;
-}
-
-
-.top-bar{
-    height: 100px;
+.c2{
+    float: left;
     width: 100%;
-    margin-left: 0;
+    overflow: scroll;
 }
 
-.home-bar{
-    height: 300px;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.title{
-    width: 1200px;
-    height: 230px;
-    margin-left: 40px;
-    margin-top: 40px;
-    animation: fade-in 1.5s ease;
-    animation-direction: forwards;
-    
-}
-
-.title-bar{
-    position: fixed;
-    width: 200px;
-    height: 30px;
-    margin-left: 20px;
-    padding-top: 15px;
-/*    float: left;*/
-    border: solid white;
-    border-width: 0px 0px 0px 0px;
-    
-}
-
-.title-bar:hover{
-    opacity: 0.5;
-}
-
-
-.work{
+.project{
     float: left;
-    width: 165px;
-    height: 70px;
-    margin-left: 40px;
-    margin-right: 25px;
-    animation: fade-in 1.5s ease;
-    animation-direction: forwards;
-}
-
-.work:hover{
-    border: solid white;
-    border-width: 0px 0px 3px 0px;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 
-.work-bar{
+
+.project1: hover + .image{
+    opacity: 1;
+}
+
+.rule{
     float: left;
-    width: 80px;
-    height: 30px;
-    padding-top: 15px;
-    padding-left: 15px;
+    width: 100%;
     border: solid white;
-    border-width: 0px 0px 0px 0px;
+    border-width: 1px 0px 0px 0px;
 }
-
-.work-bar:hover{
-    border: solid white;
-    border-width: 0px 0px 1px 0px;
-}
-
-
-
-.contact{
-    float: right;
-    width: 240px;
-    height: 70px;
-    margin-right: 0px;
-/*    margin-left: 40px;*/
-    animation: fade-in 1.5s ease;
-    animation-direction: forwards;
-}
-
-.contact-bar{
-    float: right;
-    margin-top: 20px;
-    margin-right: 30px;
-}
-
-
-.contact:hover{
-    border: solid white;
-    border-width: 0px 0px 3px 0px;
-}
-
-.cv{
-    float: left;
-    width: 520px;
-    height: 70px;
-    margin-left: 40px;
-    margin-right: 25px;
-    animation: fade-in 1.5s ease;
-    animation-direction: forwards;
-}
-
-.cv:hover{
-    border: solid white;
-    border-width: 0px 0px 3px 0px;
-}
-
-
-.CV-bar{
-    float: left;
-    width: 225px;
-    height: 30px;
-    padding-top: 15px;
-    padding-left: 20px;
-    border: solid white;
-    border-width: 0px 0px 0px 0px;
-}
-
-.CV-bar:hover{
-    border: solid white;
-    border-width: 0px 0px 1px 0px;
-}
-
-
-.project1{
-    margin-top: 55px;
-    margin-right: 55px;
-    float: left;
-    height: 400px;
-    width: 400px;
-}
-
-.project2{
-    margin-top: 55px;
-    float: left;
-    height: 400px;
-    width: 400px;
-}
-
-.project3{
-    float: left;
-    height: 400px;
-    width: 400px;
-}
-
-.project4{
-    float: left;
-    height: 499.5px;
-    width: 499.5px;
-}
-
-.portrait{
-    width: 626px;
-    border: solid white;
-    border-width: 0px 1px 0px 0px;
-}
-
 
 .image{
-    margin-top: 80px;
     width: 100%;
-    animation: fade-in 1.5s ease;
-    animation-direction: forwards;
+    opacity: 1;
 }
 
-.image2{
-    margin-top: 135px;
-    height: 250px;
-    margin-left: 55px;
-}
-
-.top_image{
-    width: 100%;
-    
-}
-
-.display_image_work{
+.skinny{
     float: left;
-    width: 100%;
-    animation: fade-in 1.5s ease;
-    animation-direction: forwards;
+    width: 45%;
+
 }
 
-.display_image_phone{
-    width: 100%;
-    animation: fade-in 1.5s ease;
-    animation-direction: forwards;
-}
-
-.display_image{
+.details{
     float: left;
-    width: 100%;
-    animation: fade-in 1.5s ease;
-    animation-direction: forwards;
-    padding-bottom: 50px;
+/*    width: 45%;*/
+    padding-left: 10px;
+    margin-bottom: 15px;
+    margin-top: 10px;
 }
 
 
-.body_copy{
-    margin-bottom: 100px;
+.links{
+    float: left;
+    width: 40%;
     margin-top: 20px;
-    margin-left: 100px;
-    width: 350px;
 }
 
 .indent{
-    margin-left: 20px;
-}
-
-.description2{
     margin-left: 40px;
-    margin-top: 50px;
 }
 
-.next_project{
-    float: right;
-    margin-bottom: 50px;
-    margin-right: 50px;
-    border: solid white;
-    border-width: 0px 0px 0px 0px;
-    
-}
-
-.next_project:hover{
-    border: solid white;
-    border-width: 0px 0px 1px 0px;
-    padding-bottom: 3px;
+.header{
+    float: left;
+/*    width: 100%;*/
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .back{
-    float: left;
-    margin-bottom: 50px;
-    margin-left: 50px;
-    border: solid white;
-    border-width: 0px 0px 0px 0px;
+    float: right;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-right: 20px;
 }
 
-.back:hover{
-    border: solid white;
-    border-width: 0px 0px 1px 0px;
-    padding-bottom: 3px;
+.right{
+    float: right;
 }
 
-.CV_container{
-    margin-top: 50px;
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.CV_body_copy{
-     margin-bottom: 100px;
-    margin-top: 20px;
-    margin-left: 50px;
-    width: 400px;
-    animation: fade-in 1.5s ease;
-    animation-direction: forwards;
-}
 
-@keyframes fade-in{
-    0%{
-        transform: opacity;
-        opacity: 0;
+
+/* Mobile */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    
+ .container{
+/*        background-color: red;*/
+        overflow-y: none;
     }
-    100%{
-        transform: opacity;
-        opacity: 1;
-        
+    
+    h1 {
+    color: white;
+    font-weight: 500;
+    line-height: 1;
+    font-size: 20px;
+    font-family: "gt_zirkon_medium", "Helvetica", "Arial", sans-serif;
     }
+    
+    h2 {
+    color: white;
+    font-weight: 200;
+    line-height: 1.2;
+    font-size: 12px;
+    font-family: "gt_zirkon_medium", "Helvetica", "Arial", sans-serif;
+    }
+    
+    h3 {
+    color: white;
+    font-weight: 500;
+    line-height: 1;
+    font-size: 22px;
+    font-family: "gt_zirkon_thin", "Helvetica", "Arial", sans-serif;
+    }
+    
+    p {
+    font-family: "gt_zirkon_book";    
+    color: white;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 14px;
+    }
+    
+    .c1{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    
+    .project{
+    float: left;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+    
+    .project:hover img {
+    display:none;
+    }
+
+    .project img {
+    position: absolute;
+    left: 50%;
+    width:50%;
+    display: none;
+    top:0;
+    }
+
+    .details{
+        width: 100%;
+    }
+    
+    .right{
+        float: left;
+    }
+    
+    .header{
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }   
+    
+    
+
+
 }
 
-.coming_soon{
-    float: left;
-    margin-left: 100px;
+/* iPad */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    
+ .container{
+/*        background-color: coral;*/
+    }
+    
+    h1 {
+    color: white;
+    font-weight: 500;
+    line-height: 1;
+    font-size: 55px;
+    font-family: "gt_zirkon_medium", "Helvetica", "Arial", sans-serif;
+    }
+    
+    h2 {
+    color: white;
+    font-weight: 200;
+    line-height: 1.2;
+    font-size: 17px;
+    font-family: "gt_zirkon_medium", "Helvetica", "Arial", sans-serif;
 }
+    
+    h3 {
+    color: white;
+    font-weight: 500;
+    line-height: 1;
+    font-size: 55px;
+    font-family: "gt_zirkon_thin", "Helvetica", "Arial", sans-serif;
+    }
+    
+    p {
+    font-family: "gt_zirkon_book";    
+    color: white;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 17px;
+    }
+    
+    .c1{
+        width: 100%
+    }
 
-.link{
+    
+    .project{
     float: left;
-    margin-left: 48%;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
     margin-bottom: 50px;
+    }
+    
+    .project:hover img {
+    display:none;
+    }
+
+    .project img {
+    position: absolute;
+    left: 50%;
+    width:50%;
+    display: none;
+    top:0;
+    }
+
+    .details{
+        width: 100%;
+    }
+    
+    .right{
+        float: left;
+    }
+    
+    
+
+
 }
 
-.link:hover{
-    opacity: 0.5;
+
+/* Small Desktop Styles */
+@media only screen and (min-width: 961px) and (max-width: 1200px) {
+    
+ .container{
+/*        background-color: red;*/
+    }
+    
+    h1 {
+    color: white;
+    font-weight: 500;
+    line-height: 1;
+    font-size: 70px;
+    font-family: "gt_zirkon_medium", "Helvetica", "Arial", sans-serif;
+    }
+    
+    h2 {
+    color: white;
+    font-weight: 200;
+    line-height: 1.2;
+    font-size: 30px;
+    font-family: "gt_zirkon_medium", "Helvetica", "Arial", sans-serif;
 }
+    
+    h3 {
+    color: white;
+    font-weight: 500;
+    line-height: 1;
+    font-size: 70px;
+    font-family: "gt_zirkon_thin", "Helvetica", "Arial", sans-serif;
+    }
+    
+    p {
+    font-family: "gt_zirkon_book";    
+    color: white;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 32px;
+    }
+    
+    .c1{
+        width: 100%
+    }
+
+    
+    .project{
+    float: left;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    }
+    
+    .project:hover img {
+    display:none;
+    }
+
+    .project img {
+    position: absolute;
+    left: 50%;
+    width:50%;
+    display: none;
+    top:0;
+    }
+
+    .details{
+        width: 100%;
+    }
+    
+    .right{
+        float: left;
+    }
+
+
+}
+
+
+/* Large Desktop Styles */
+@media only screen and (min-width: 1201px)and (max-width: 1400px)
+
+{
+
+    .container{
+/*        background-color: aqua;*/
+    }
+
+}
+
