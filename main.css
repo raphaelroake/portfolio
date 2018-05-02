@@ -188,7 +188,6 @@ p {
 .c1{
     float: left;
     width: 50%;
-    overflow: scroll;
 }
 
 .c2{
@@ -397,7 +396,7 @@ p {
     }
     
     .c1{
-        width: 100%
+        width: 100%;
     }
 
     
